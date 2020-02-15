@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Design</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            height: 100%;
+            width: 100%;      
+        }
+        h1 {
+            font-weight: bold;
+        }
+        .header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* align-items: center; */
+            /* border: 5px solid palevioletred;
+            margin: auto;
+            width: 50%; */
+        
+        
+        
+        }
+        .container {
+            padding-left: 30;
+            padding-right: 30;
+        }
+        
+
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+        }
+        .col {
+           width: 50% 
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        img {
+           display: block;
+           width: 50px;
+        }
+        .chart {
+           padding: 30px;
+        }
+        @media (min-width: 400px) {
+             .bottom {
+                flex-direction: row;
+            }
+            .col {
+           width: 33.33%;
+            }
+        }
+        @media (min-width: 401px) and (max-width: 960px) {
+           .chart {
+               width: 50%;
+            
+           }
+        }
+        
+        @media (min-width: 961px) {
+            .header {
+                display: flex;
+                
+                justify-content: flex-start;
+                align-items: center;
+                position: relative;
+            } 
+            .bottom{
+                 display: flex;
+                flex-direction: column;
+                justify-content: center;  
+            }
+        } 
+    
+    
+    
+    
+    
+    </style>
+</head>
+<body> 
+    <div class="header">
+         
+            <img src="https://i.pinimg.com/originals/93/78/ee/9378ee8eac336049406a17602bd59a94.jpg">
+            <h1>Marcarons</h1>
+        </div>
+    </div>   
+    <div class="bottom">
+        <div class="col">
+            <div class="row">
+                <div class="chart">
+                    <img src="https://www.nobiggie.net/wp-content/uploads/2016/09/Candy-Corn-Colored-French-Macarons.jpg">
+                </div>
+                <div class="chart">
+                     <img src="https://www.pequeocio.com/wp-content/uploads/2014/04/postres-faciles-para-ninos.jpg">
+                </div>
+                <div class="chart">
+                    <img src="https://farm9.staticflickr.com/8604/16539686526_d2728fb7d8_o.jpg">
+                </div>
+                 <div class="chart">
+                    <img src="http://farm8.staticflickr.com/7394/11430570584_e548721195_o.jpg">
+                </div>  
+                <div class="chart">
+                    <img src="http://farm6.static.flickr.com/5230/5614372321_9d3be11310_z.jpg">
+                </div>
+                <div class="chart">
+                    <img src="https://www.homecrux.com/wp-content/uploads/2018/08/Vegan-Food-Arrangement-by-Jose-40.jpg">
+                </div>
+                <div class="chart">
+                    <img src="https://i.etsystatic.com/5570408/r/il/f77934/910052706/il_1588xN.910052706_fhyx.jpg">
+                </div>
+                <div class="chart">
+                    <img src="https://c6.staticflickr.com/9/8875/28225302541_2d204e4f43_c.jpg">
+                </div>
+                <div class="chart">
+                    <img src="https://i.pinimg.com/564x/97/39/3f/97393fa07814221374629a7a41dc304e.jpg">
+                </div>
+                <div class="chart">
+                   <img src="https://thebusyspatula.files.wordpress.com/2016/01/dsc_0133.jpg?w=1100&h=1654">
+                </div>
+                <div class="chart">
+                    <img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_800/https://www.savingdessert.com/wp-content/uploads/2018/02/Lemon-Macarons-Small-PIN.jpg">
+                </div>
+                <div class="chart">
+                    <img src="https://mymodernmet.com/wp/wp-content/uploads/2017/02/melly-eats-world-animal-macarons-1.jpg">
+                </div>
+            </div>   
+        </div>
+    </div>
+</body>
+
+</html>
